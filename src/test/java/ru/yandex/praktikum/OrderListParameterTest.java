@@ -32,7 +32,6 @@ public class OrderListParameterTest {
 
     @Before
     public void setUp() {
-        //orders = Orders.getRandomOrder(colors);
         ordersClient = new OrdersClient();
         Orders.getRandomOrder(colors);
     }
