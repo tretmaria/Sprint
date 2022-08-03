@@ -1,0 +1,4 @@
+# игнорировать .allure/allure-2.15.0
+.allure/allure-2.15.0
+# игнорировать .idea
+.idea
