@@ -1,40 +1,38 @@
 # Sprint_3
-Описание: нужно протестировать API учебного сервиса Яндекс.Самокат. Его документация: qa-scooter.praktikum-services.ru/docs/.
 
-Протестировать ручки:
+Description: You need to test the Yandex.Samokat training service API. Its documentation: qa-scooter.praktikum-services.ru/docs/.
 
-Создание курьера
+Create a Courier:
 
-Проверить:
-курьера можно создать;
-нельзя создать двух одинаковых курьеров;
-чтобы создать курьера, нужно передать в ручку все обязательные поля;
-запрос возвращает правильный код ответа;
-успешный запрос возвращает ok: true;
-если одного из полей нет, запрос возвращает ошибку;
-если создать пользователя с логином, который уже есть, возвращается ошибка.
+Courier can be created; 
 
-Логин курьера
+You cannot create two identical couriers; 
 
-Проверить:
-курьер может авторизоваться;
-для авторизации нужно передать все обязательные поля;
-система вернёт ошибку, если неправильно указать логин или пароль;
-если какого-то поля нет, запрос возвращает ошибку;
-если авторизоваться под несуществующим пользователем, запрос возвращает ошибку;
-успешный запрос возвращает id.
+To create a courier you must pass all required fields; 
 
-Создание заказа
+Request returns correct response code: successful request returns ok: true; if one of the fields is missing, request returns error; if you create a user with a login that already exists, error is returned.
 
-Проверить, что когда создаёшь заказ:
-можно указать один из цветов — BLACK или GREY;
-можно указать оба цвета;
-можно совсем не указывать цвет;
-тело ответа содержит track.
-Чтобы протестировать создание заказа, нужно использовать параметризацию.
+Login a Courier:
 
-Список заказов
+Courier can log in; 
 
-Проверить, что в тело ответа возвращается список заказов.
+All required fields must be passed for authorization; 
 
-Сгенерировать отчёт Allure
+The system will return an error if the username or password is incorrect; if any field is missing, the request returns an error; 
+
+If you authorize as a non-existent user, the request returns an error; a successful request returns id.
+
+Create an order:
+
+To test that when you create an order: you can specify one of the colors - BLACK or GREY; you can specify both colors; you can specify no color at all; 
+
+The response body contains track. 
+
+To test the creation of an order, you must use parameterization.
+
+Order List:
+
+Verify that the order list is returned in the response body.
+
+Generate an Allure report.
+
